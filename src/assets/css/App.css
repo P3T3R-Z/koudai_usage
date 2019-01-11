@@ -1,0 +1,255 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #333;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+@media screen and (min-width: 414px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.black_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.fade-enter,
+.fade-appear {
+  opacity: 0.01;
+  transform: scale(0.9);
+}
+.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease;
+}
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9);
+  transition: all 300ms ease;
+}
+
+.fadein-enter,
+.fadein-appear {
+  opacity: 0.01;
+  transform: scale(1.1);
+}
+.fadein-enter-active,
+.fadein-appear-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms ease;
+}
+.fadein-exit {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.fadein-exit-active {
+  opacity: 0.01;
+  transform: scale(1);
+  transition: all 300ms ease;
+}
+
+
+
+
+.max_touch_area{
+  width: 100%;
+  position: fixed;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 99;
+}
+.touchArea {
+  position: fixed;
+  z-index: 10;
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+}
+.circle{
+  position: absolute;
+  z-index: 8;
+  width: 2rem;
+  background: rgba(241,198,174,.5);
+  height: 2rem;
+  top: -1rem;
+  left: -.8rem;
+  border-radius: 50%;
+  animation: wave 1.2s infinite ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-delay: 100ms
+}
+.circle span{
+  width: 1rem;
+  background: #f1c6ae;
+  height: 1rem;
+  border-radius: 50%;
+  animation: wave 1.2s infinite ease-out;
+}
+@keyframes wave{
+   25%,75%{
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+  }
+  0%, 50%, 100%{
+    transform: scale(0,0);
+    -webkit-transform: scale(0,0);
+  }
+}
+.touchhand {
+  position: absolute;
+  z-index: 9;
+  width: 2rem;
+}
+.change {
+  animation: changeSize 1.2s infinite ease-in-out;
+}
+@keyframes changeSize {
+  0%,50%,100% {
+    transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+  }
+  25%,75% {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.blackbg{
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  position: fixed;
+  z-index:8;
+  top:0;
+  background:#000;
+  opacity: .6;
+}
+img{
+  display: block;
+  max-height: 100%;
+  max-width: 750px
+}
+.stepimg {
+  width: 100%;
+  position: fixed;
+  left:50%;
+  transform: translateX(-50%);
+  height: 100%
+}
+.step1_2_text{
+  position: fixed;
+  width: 50%;
+  margin-left: -25%;
+  left: 50%;
+  top: 55%;
+}
+.step2_text1{
+  position: fixed;
+  width: 65%;
+  right:10%;
+  top: 10%;
+  z-index:9
+}
+.step3_text1{
+  position: fixed;
+  width: 70%;
+  margin-left: -35%;
+  left: 50%;
+  top: 40%;
+  z-index:9
+}
+.step3_text2{
+  position: fixed;
+  width: 55%;
+  margin-left: -25.5%;
+  left: 50%;
+  top: 75%;
+  z-index:9
+}
+.step4_text{
+  position: fixed;
+  width: 65%;
+  margin-left: -32.5%;
+  left: 50%;
+  top: 70%;
+  z-index:9
+}
+.step5_text1{
+  position: fixed;
+  width: 80%;
+  margin-left: -40%;
+  left: 50%;
+  top: 62%;
+  z-index:9
+}
+
+
+.step5_2 {
+  left: 55%;
+  top: 42.5%;
+  width: 75%;
+  position: fixed;
+  max-width: 300px;
+  transform: translateX(-50%)
+}
+
+.sharebox{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  transition: all 200ms;
+  transform: translateY(100%);
+  z-index:9
+}
+.shareTip{
+  position: absolute;
+  top: 42%;
+  width: 60%;
+  margin-left: -30%;
+  left: 50%;
+  z-index:9
+}
+@media screen and (min-height:812px){
+  .shareTip{
+    position: absolute;
+    top: 52%;
+    width: 60%;
+    margin-left: -30%;
+    left: 50%;
+    z-index:9
+  }
+}
