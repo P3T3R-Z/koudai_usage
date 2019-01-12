@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "/public",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "jscookie": "^1.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
