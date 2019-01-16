@@ -7,6 +7,7 @@ import step5_2img from "../assets/images/5.2.png";
 import step5_3img from "../assets/images/5.3.png";
 import step5_text1 from "../assets/images/step5_text1.png"
 import {docHeight} from "../assets/js/base"
+import jscookie from "jscookie"
 class Step3 extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,8 @@ class Step3 extends Component {
       styles: {
         bottom: "-5%",
         left: "50%"
-      }
+      },
+      token:''
     };
   }
   render() {
@@ -92,9 +94,14 @@ class Step3 extends Component {
         fade3: true
       });
     }, 1600);
+
+    this.setState({
+      token: jscookie.get('microchatCode')
+    })
+    console.log(this.state.token)
   }
   next = () => {
-    alert(123)
+    window.location.href = `https://m.tuokgx.net/?token=${this.state.token}&isGuide=1`
   };
 }
 
