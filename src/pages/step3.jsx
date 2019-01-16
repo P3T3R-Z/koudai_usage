@@ -41,30 +41,33 @@ class Step3 extends Component {
           unmountOnExit
           appear={true}
         >
-        <div>
-          <img src={step3_text1} alt="" className="step3_text1"/>
-          <img src={step3img} alt="" className="stepimg" />
-          <img src={step3_text2} alt="" className="step3_text2"/>
-        </div>
+          <div>
+            <img src={step3_text1} alt="" className="step3_text1" />
+            <img src={step3img} alt="" className="stepimg" />
+            <img src={step3_text2} alt="" className="step3_text2" />
+          </div>
         </CSSTransition>
 
         <Touchhand timeOut="1000" styles={this.state.styles} event={this.next}>
-          {<div
-            style={{
-              position: "fixed",
-              width: "100%",
-              height: "5rem",
-              left: "0",
-              marginTop:'-2.5rem'
-            }}
-            
-          />}
+          {
+            <div
+              style={{
+                position: "fixed",
+                width: "100%",
+                height: "5rem",
+                left: "0",
+                marginTop: "-2.5rem"
+              }}
+            />
+          }
         </Touchhand>
       </div>
     );
   }
-  componentDidMount() {
-    
+  componentWillUnmount() {
+    this.setState = (state, callback) => {
+      return;
+    };
   }
   next = () => {
     this.setState({

@@ -5,7 +5,6 @@ $parmas
  timeOut 弹出时间
  handStyle 样式
  */
-var timer
 class Touchhand extends Component {
   constructor(props) {
     super(props);
@@ -44,14 +43,18 @@ class Touchhand extends Component {
     this.setState({
         maxWidth
     })
-    timer= setTimeout(() => {
+    setTimeout(() => {
       this.setState({
         handShow: true
       });
     }, this.props.timeOut);
   }
-  componentWillUnMount = () => {
-    clearTimeout(timer)
+
+  componentWillUnmount(){
+    
+    this.setState = (state,callback)=>{
+      return;
+    };
   }
 }
 export default Touchhand;

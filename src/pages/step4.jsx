@@ -25,7 +25,7 @@ class Step3 extends Component {
       return (
         <Redirect
           to={{
-            pathname: "/step5"
+            pathname: "/step5",
           }}
           push
           from="/step4"
@@ -72,6 +72,11 @@ class Step3 extends Component {
         }
       });
     }
+  }
+  componentWillUnmount() {
+    this.setState = (state, callback) => {
+      return;
+    };
   }
   next = () => {
     this.setState({

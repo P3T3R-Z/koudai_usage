@@ -10,7 +10,7 @@ import shareTip from "../assets/images/shareTip.png";
 import { docHeight } from "../assets/js/base";
 import step2_text1 from "../assets/images/step2_text1.png";
 
-var timer;
+
 class Step2 extends Component {
   constructor(props) {
     super(props);
@@ -116,14 +116,16 @@ class Step2 extends Component {
         }
       });
     }
-    timer = setTimeout(() => {
+    setTimeout(() => {
       this.setState({
         fade2: true
       });
     }, 1000);
   }
-  componentWillUnMount = () => {
-    clearTimeout(timer);
+  componentWillUnmount = () => {
+    this.setState = (state,callbak)=>{
+      return
+    }
   };
   showshare = () => {
     this.setState({

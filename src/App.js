@@ -36,6 +36,11 @@ class App extends Component {
       </Router>
     );
   }
+  componentWillUnmount(){
+    this.setState = (state,callback)=>{
+      return;
+    };
+  }
 }
 
 export default App;

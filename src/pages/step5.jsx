@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { CSSTransition } from "react-transition-group";
-
+import { Redirect } from "react-router-dom";
 import Touchhand from "../components/touchHand";
 import step5img from "../assets/images/5.1.jpg";
 import step5_2img from "../assets/images/5.2.png";
@@ -23,7 +23,14 @@ class Step3 extends Component {
     };
   }
   render() {
-   
+    if (this.state.redirect) {
+      return (
+        <Redirect
+          to="/"
+          push
+        />
+      );
+    }
     return (
       <div>
         <CSSTransition
@@ -74,8 +81,16 @@ class Step3 extends Component {
       </div>
     );
   }
+  componentWillMount(){
+    
+    if(this.props.location.hasOwnProperty("state")){
+      this.setState({
+        redirect:true
+      })
+    }
+  }
   componentDidMount() {
-    console.log(docHeight())
+    
     if(docHeight()>= 812){
       this.setState({
         styles: {
@@ -100,8 +115,14 @@ class Step3 extends Component {
     })
     console.log(this.state.token)
   }
+  componentWillUnmount(){
+    this.setState = (state,callback)=>{
+      return;
+    };
+  }
   next = () => {
     window.location.href = `https://m.tuokgx.net/?token=${this.state.token}&isGuide=1`
+    
   };
 }
 

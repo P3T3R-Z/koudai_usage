@@ -7,7 +7,6 @@ import step1img from "../assets/images/1.1.jpg";
 import step1_2img from "../assets/images/1.2.jpg";
 import step1_2_text from "../assets/images/text.png";
 
-var timer;
 class Step1 extends Component {
   constructor(props) {
     super(props);
@@ -90,14 +89,16 @@ class Step1 extends Component {
     );
   }
   componentDidMount() {
-    timer = setTimeout(() => {
+    setTimeout(() => {
       this.setState({
         fade2: true
       });
     }, 1000);
   }
-  componentWillUnMount = () => {
-    clearTimeout(timer);
+  componentWillUnmount = () => {
+    this.setState = (state,callback)=>{
+      return;
+    };
   };
   next = () => {
     this.setState({
