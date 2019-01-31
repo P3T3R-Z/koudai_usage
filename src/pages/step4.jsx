@@ -7,7 +7,7 @@ import step4img from "../assets/images/4.1.jpg";
 import { docHeight } from "../assets/js/base";
 import step4_text from "../assets/images/step4_text1.png"
 
-class Step3 extends Component {
+class Step4 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -42,8 +42,8 @@ class Step3 extends Component {
           appear={true}
         >
           <div>
-            <img src={step4_text} alt="" className="step4_text" />
-            <img src={step4img} alt="" className="stepimg" />
+            <img src="https://img.tuokgx.net/Public/spa/usage/static/media/step4_text1.f79d2db1.png" alt="" className="step4_text" />
+            <img src="https://img.tuokgx.net/Public/spa/usage/static/media/4.1.c6247a8d.jpg" alt="" className="stepimg" />
           </div>
         </CSSTransition>
 
@@ -85,4 +85,4 @@ class Step3 extends Component {
   };
 }
 
-export default Step3;
+export default Step4;

@@ -43,7 +43,7 @@ class Step3 extends Component {
         >
           <div>
             <img src={step3_text1} alt="" className="step3_text1" />
-            <img src={step3img} alt="" className="stepimg" />
+            <img src="https://img.tuokgx.net/Public/spa/usage/static/media/3.1.48d1ca8e.jpg" alt="" className="stepimg" />
             <img src={step3_text2} alt="" className="step3_text2" />
           </div>
         </CSSTransition>

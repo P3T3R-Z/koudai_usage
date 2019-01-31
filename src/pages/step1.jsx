@@ -48,7 +48,7 @@ class Step1 extends Component {
           appear={true}
         >
           <img
-            src={step1img}
+            src="https://img.tuokgx.net/Public/spa/usage/static/media/1.1.6e7bc70b.jpg"
             alt=""
             className="stepimg"
             ref={this.saveRef}
@@ -67,7 +67,7 @@ class Step1 extends Component {
           unmountOnExit
         >
           <div>
-            <img src={step1_2img} alt="" className="stepimg" />
+            <img src="https://img.tuokgx.net/Public/spa/usage/static/media/1.2.e76a4269.jpg" alt="" className="stepimg" />
             <img src={step1_2_text} alt="" className="step1_2_text" />
           </div>
         </CSSTransition>

@@ -55,7 +55,7 @@ class Step2 extends Component {
           unmountOnExit
           appear={true}
         >
-          <img src={step2img} alt="" className="stepimg" />
+          <img src="https://img.tuokgx.net/Public/spa/usage/static/media/2.1.5f1d8950.jpg" alt="" className="stepimg" />
         </CSSTransition>
 
         <CSSTransition
@@ -67,7 +67,7 @@ class Step2 extends Component {
           {this.state.open === false ? (
             <div>
               <img src={step2_text1} alt="" className="step2_text1" />
-              <img src={step2_2img} alt="" className="stepimg" />
+              <img src="https://img.tuokgx.net/Public/spa/usage/static/media/2.2.e24803c2.jpg" alt="" className="stepimg" />
             </div>
           ) : (
             <div />

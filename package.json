@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/Public/spa/usage",
+  "homepage": "https://img.tuokgx.net/Public/spa/usage",
   "dependencies": {
     "@babel/core": "7.1.6",
     "@babel/polyfill": "^7.2.5",

@@ -8,7 +8,7 @@ import step5_3img from "../assets/images/5.3.png";
 import step5_text1 from "../assets/images/step5_text1.png"
 import {docHeight} from "../assets/js/base"
 import jscookie from "jscookie"
-class Step3 extends Component {
+class Step5 extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,7 +40,7 @@ class Step3 extends Component {
           unmountOnExit
           appear={true}
         >
-          <img src={step5img} alt="" className="stepimg" />
+          <img src="https://img.tuokgx.net/Public/spa/usage/static/media/5.1.963d0c62.jpg" alt="" className="stepimg" />
         </CSSTransition>
 
         <CSSTransition
@@ -61,8 +61,8 @@ class Step3 extends Component {
           appear={true}
         >
         <div>
-          <img src={step5_text1} alt="" className="step5_text1"/>
-          <img src={step5_3img} alt="" className="stepimg" />
+          <img src="https://img.tuokgx.net/Public/spa/usage/static/media/step5_text1.b7eb19ee.png" alt="" className="step5_text1"/>
+          <img src="https://img.tuokgx.net/Public/spa/usage/static/media/5.3.53a40dd8.png" alt="" className="stepimg" />
           </div>
         </CSSTransition>
 
@@ -126,4 +126,4 @@ class Step3 extends Component {
   };
 }
 
-export default Step3;
+export default Step5;
